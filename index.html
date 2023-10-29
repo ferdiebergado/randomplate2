@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Plate Generator v2.0</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+
+<body>
+    <main class="container">
+
+        <article>
+
+            <h1>Random Plate Generator v2.0</h1>
+
+            <hgroup>
+                <h1 id="plate"></h1>
+                <h2 id="driver"></h2>
+            </hgroup>
+
+            <div class="grid">
+
+                <div>
+                    <select id="region">
+                        <option value="" disabled>Select region:</option>
+                        <option value="A">Region I</option>
+                        <option value="B">Region II</option>
+                        <option value="C">Region III</option>
+                        <option value="D">CALABARZON</option>
+                        <option value="V">MIMAROPA</option>
+                        <option value="A">CAR</option>
+                        <option value="P" selected>NCR</option>
+                        <option value="E">Region V</option>
+                        <option value="F">Region VI</option>
+                        <option value="G">Region VII</option>
+                        <option value="H">Region VIII</option>
+                        <option value="J">Region IX</option>
+                        <option value="K">Region X</option>
+                        <option value="L">Region XI</option>
+                        <option value="M">Region XII</option>
+                        <option value="L">Caraga</option>
+                        <option value="J">BARMM</option>                            
+                    </select>
+                </div>
+
+                <div>
+                    <button id="generate" data-tooltip="Click to generate a new plate">GENERATE</button>
+                </div>
+
+            </div>
+
+        </article>
+        </section>
+
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
