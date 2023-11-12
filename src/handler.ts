@@ -4,9 +4,10 @@ import { getDataFromFile, randInt } from './utils';
 const FIRSTNAMES_FILE = 'firstnames.txt';
 const LASTNAMES_FILE = 'lastnames.txt';
 
-const publicDir = path.join(process.cwd(), 'public');
-const firstnamePath = path.join(publicDir, FIRSTNAMES_FILE);
-const lastnamePath = path.join(publicDir, LASTNAMES_FILE);
+// const publicDir = path.join(process.cwd(), 'public');
+const srcDir = path.join(process.cwd(), 'src');
+const firstnamePath = path.join(srcDir, FIRSTNAMES_FILE);
+const lastnamePath = path.join(srcDir, LASTNAMES_FILE);
 
 async function generateDriver(): Promise<string> {
   const firstnames = await getDataFromFile(firstnamePath);
