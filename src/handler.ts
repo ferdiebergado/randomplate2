@@ -5,7 +5,14 @@ const FIRSTNAMES_FILE = 'firstnames.txt';
 const LASTNAMES_FILE = 'lastnames.txt';
 
 const cwd = process.cwd();
-console.log('cwd:', cwd, 'up:', path.join(cwd, '..', '..'));
+console.log(
+  'cwd:',
+  cwd,
+  'path+__dirname:',
+  path.join(__dirname),
+  '__dirname:',
+  __dirname,
+);
 
 // const publicDir = path.join(process.cwd(), 'public');
 const srcDir = path.join(process.cwd(), 'src');
