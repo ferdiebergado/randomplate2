@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Plate Generator v3.0</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <article>
+        <h1>Random Plate Generator v3.0</h1>
+
+        <hgroup>
+          <h1 id="plate"></h1>
+          <h2 id="driver"></h2>
+        </hgroup>
+
+        <div class="grid">
+          <form>
+            <select id="region">
+              <option value="" disabled>Select region:</option>
+              <option value="A">Region I</option>
+              <option value="B">Region II</option>
+              <option value="C">Region III</option>
+              <option value="D">CALABARZON</option>
+              <option value="V">MIMAROPA</option>
+              <option value="A">CAR</option>
+              <option value="P" selected>NCR</option>
+              <option value="E">Region V</option>
+              <option value="F">Region VI</option>
+              <option value="G">Region VII</option>
+              <option value="H">Region VIII</option>
+              <option value="J">Region IX</option>
+              <option value="K">Region X</option>
+              <option value="L">Region XI</option>
+              <option value="M">Region XII</option>
+              <option value="L">Caraga</option>
+              <option value="J">BARMM</option>
+            </select>
+            <button id="generate">GENERATE</button>
+          </form>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
