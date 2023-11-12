@@ -4,6 +4,9 @@ import { getDataFromFile, randInt } from './utils';
 const FIRSTNAMES_FILE = 'firstnames.txt';
 const LASTNAMES_FILE = 'lastnames.txt';
 
+const cwd = process.cwd();
+console.log('cwd:', cwd, 'up:', path.join(cwd, '..', '..'));
+
 // const publicDir = path.join(process.cwd(), 'public');
 const srcDir = path.join(process.cwd(), 'src');
 const firstnamePath = path.join(srcDir, FIRSTNAMES_FILE);
