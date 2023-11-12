@@ -16,8 +16,10 @@ console.log(
 
 // const publicDir = path.join(process.cwd(), 'public');
 // const srcDir = path.join(process.cwd(), 'src');
-const firstnamePath = path.join(__dirname, FIRSTNAMES_FILE);
-const lastnamePath = path.join(__dirname, LASTNAMES_FILE);
+const firstnamePath = path.join(cwd, 'data', FIRSTNAMES_FILE);
+const lastnamePath = path.join(cwd, 'data', LASTNAMES_FILE);
+
+console.log('fnamep:', firstnamePath, 'lnamep:', lastnamePath);
 
 async function generateDriver(): Promise<string> {
   const firstnames = await getDataFromFile(firstnamePath);
